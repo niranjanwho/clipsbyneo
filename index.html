@@ -79,7 +79,9 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
       var swiper = new Swiper(".mySwiper", {
-        spaceBetween: 40,
+        slidesPerView: "auto",
+      	centeredSlides: true,
+	      spaceBetween: 40,
         autoHeight: true,
         freeMode: true,
 				dragMode: true,
@@ -87,14 +89,6 @@
         mousewheel: true,
         keyboard: {
           enabled: true,
-        },
-        breakpoints: {
-          768: {
-            slidesPerView: 2,
-          },
-          1024: {
-            slidesPerView: 5,
-          },
         },
       });
 
